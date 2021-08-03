@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			background: #98BDFB;
+			padding: 10px;
+			display: grid;
+			grid-template-areas: 'o3 o4 o1'
+						'o5 o6 o2';
+			grid-gap: 10px;
+		}
+		.container > div{
+			padding: 20px;
+			background: #514CBF;
+			text-align: center;
+			font-size: 30px;
+			color: white;
+		}
+		.item1{
+			grid-area: o1;
+		}
+		.item2{
+			grid-area: o2;
+		}
+		.item3{
+			grid-area: o3;
+		}
+		.item4{
+			grid-area: o4;
+		}
+		.item5{
+			grid-area: o5;
+		}
+		.item6{
+			grid-area: o6;
+		}
+
+		@media (max-width: 367px){
+			.container{
+				grid-template-areas: 'o1' 'o2' 'o3' 'o4' 'o5' 'o6';
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item1">1</div>
+		<div class="item2">2</div>
+		<div class="item3">3</div>
+		<div class="item4">4</div>
+		<div class="item5">5</div>
+		<div class="item6">6</div>
+	</div>
+</body>
+</html>
